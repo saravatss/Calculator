@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <h1 class="title">Калькулятор, расчитывающий стоимость печати книг</h1>
+  
+    <div class="main-block">
+  
+      <div id="features">
+        <div class="counter-of-pages">
+          <div>Количество страниц:</div>
+          
+          <input 
+          type="number" 
+          value="1" min="1" 
+          max="1000" 
+          data-price="1" 
+          id="count-of-pages">
+        </div>
+        
+        <div class="counter-of-books marginAll">
+            <div>Тираж:</div>
+            
+            <input type="number" value="1" min="1" max="10000" data-price="2" id="count-of-books">
+        </div>
+          
+      
+        <div class="types-of-list marginAll">
+          <div>Тип бумаги:</div>
+          
+          <select id="type-of-list">
+              <option selected="selected" value="0">Выберите тип бумаги</option>
+              <option value="0.7">Цветная бумага, 160 гр/кв.м</option>
+              <option value="1">Глянцевая (gloss), 200 гр/кв.м</option>
+              <option value="1.5">Глянцевая (gloss), 250 гр/кв.м</option>
+              <option value="1.7">Глянцевая (gloss), 300 гр/кв.м</option>
+              <option value="1">Полу-глянецевая (silk), 200 гр/кв.м</option>
+              <option value="1.5">Полу-глянецевая (silk), 300 гр/кв.м</option>
+          </select>
+        </div>
+          
+          
+        <div class="types-of-cover marginAll">
+          <div>Тип обложки:</div>
+
+          <select id="type-of-cover">
+              <option selected="selected" value="0">Выберите тип обложки</option>
+              <option value="0.5">Цветная бумага, 160 гр/кв.м</option>
+              <option value="1">Глянцевая (gloss), 200 гр/кв.м</option>
+              <option value="1.5">Глянцевая (gloss), 250 гр/кв.м</option>
+              <option value="1.7">Глянцевая (gloss), 300 гр/кв.м</option>
+              <option value="1">Полу-глянецевая (silk), 200 гр/кв.м</option>
+              <option value="1.5">Полу-глянецевая (silk), 300 гр/кв.м</option>
+          </select>
+        </div>
+          
+    
+        
+        <div class="types-of-that marginAll">
+          <div>Способ переплёта:</div>
+            <select id="type-of-that">
+              <option selected="selected" value="0">Выберите способ переплёта</option>
+              <option value="2">Брошюра</option>
+              <option value="3">Термоклеевой переплет (мягкая обложка, КБС)</option>
+              <option value="2">Книжный переплет с твердой обложкой (7БЦ)</option>
+            </select>
+        </div>
+          
+    
+          
+        <div class="autor-popularity marginAll">
+          <div>Издаваемый автор популярен?</div>
+          <p><input 
+            type="checkbox" 
+            id="aut-popularity">
+            Автор популярен</p>
+        </div>
+
+
+      </div>
+    </div>
+  
+    <div class="counter">
+    
+      <button id="button">Рассчитать</button>
+
+      <div id="total-price"></div>
+
+    </div>
+    
+<script src="main.js"></script>
+
+</body>
+  
+</html>
