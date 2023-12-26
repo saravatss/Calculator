@@ -1,3 +1,3 @@
 # Calculator
 
-[Ссылка на калькулятор](https://ksushamzm.github.io/kalkulyator/)
+[Ссылка на калькулятор](https://saravatss.github.io/Calculator/)
